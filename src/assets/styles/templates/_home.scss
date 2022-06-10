@@ -1,0 +1,204 @@
+.home-hero {
+	overflow: hidden;
+	.hero-container {
+		padding: 5rem 0 7rem;
+		width: 50%;
+		@include media("<phone-land") {
+			width: 100%;
+			padding: 4rem 0 5rem;
+		}
+	}
+	.hero-button-container {
+		display: flex;
+		@include media("<phone-land") {
+			flex-direction: column;
+			row-gap: 20px;
+		}
+		input {
+			margin-bottom: 0;
+			padding: 0.4375rem 0;
+		}
+	}
+	.np-form {
+		margin-bottom: 15px;
+	}
+	.np-form .form-reg {
+		background: #f8ce4f;
+		border: 2px solid #fff;
+		border-radius: 12px;
+		box-sizing: border-box;
+		flex: 1;
+		font-family: "Nunito";
+		font-size: 2.375rem;
+		font-weight: 800;
+		letter-spacing: 0.375rem;
+		line-height: 3.25rem;
+		margin-right: 0.9375rem;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+
+		padding: 0.4375rem 0;
+	}
+	.hero-button {
+		font-size: 1.625rem;
+		line-height: 2.1875rem;
+		width: 50%;
+		background: #00b5da;
+		color: #fff;
+		border: none;
+		border-radius: 12px;
+		font-weight: 700;
+		&:hover {
+			cursor: pointer;
+		}
+		@include media("<phone-land") {
+			width: 100%;
+			line-height: 3.25rem;
+			padding: 0.4375rem 0;
+		}
+	}
+	.hero-header {
+		color: #005163;
+		margin-bottom: 15px;
+	}
+	.hero-text {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		margin-bottom: 25px;
+	}
+	.hero-subtext {
+		color: #555;
+		line-height: 29px;
+		padding: 0.8571428571rem 0;
+		font-weight: 500;
+		strong {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+}
+.hero-banner {
+	@include media("<phone-land") {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+.hero-image {
+	background: linear-gradient(90deg, #fff 30.96%, hsla(0, 0%, 100%, 0) 54.28%),
+		url(https://wordpress-784170-2683458.cloudwaysapps.com/wp-content/themes/fdry-theme/dist/images/car-hero.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 70%;
+	position: absolute;
+	right: 0rem;
+	top: 0;
+	width: 60%;
+	z-index: -1;
+	@include media("<phone-land") {
+		background: transparent !important;
+		position: static;
+		width: 100%;
+	}
+	.hero-image-mobile {
+		display: none;
+		@include media("<phone-land") {
+			display: block;
+		}
+	}
+}
+
+// WHY SELL
+.fdry-why-sell__front {
+	margin: 140px 0;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	@include media("<phone-land") {
+		margin: 70px 0;
+		padding-top: 90px;
+		padding-bottom: 70px;
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include media("<phone-land") {
+			flex-direction: column;
+			row-gap: 30px;
+			align-items: flex-start;
+		}
+		.btn {
+			min-height: 55px;
+		}
+	}
+	.why-sell-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 7.5rem;
+		margin-top: 70px;
+		row-gap: 20px;
+		@include media("<phone-land") {
+			flex-direction: column;
+			padding-bottom: 0;
+		}
+		> li {
+			align-items: unset;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: unset;
+			color: #000;
+			font-size: 21px;
+			line-height: 29px;
+			padding: 1rem;
+			width: 33.3%;
+			@include media("<phone-land") {
+				width: 100%;
+				padding: 0;
+				margin-bottom: 25px;
+			}
+			.icon-container {
+				background-color: #00b5da;
+				border-radius: 100%;
+				display: inline-block;
+				height: 24px;
+				margin-right: 1rem;
+				width: 24px;
+				top: 5px;
+				position: relative;
+				svg {
+					path {
+						stroke: white;
+					}
+				}
+			}
+			h2 {
+				font-size: 1.625rem;
+				line-height: 1.347;
+				font-weight: 600;
+			}
+			p {
+				line-height: 26px;
+				color: #000;
+			}
+		}
+	}
+}
+
+.fdry-trustpilot__front .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 80px 0 150px;
+	@include media("<phone") {
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 20px;
+	}
+	.btn {
+		min-height: 55px;
+	}
+}

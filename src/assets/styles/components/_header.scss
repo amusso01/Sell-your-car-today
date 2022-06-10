@@ -1,0 +1,66 @@
+.site-header {
+	background-color: white;
+	padding: 15px 0;
+	position: sticky;
+	top: 0;
+	&.s-sticky {
+		z-index: 10;
+		box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item {
+		flex-grow: 1;
+	}
+	&__logo {
+		max-width: 250px;
+	}
+	&__hamburger {
+		display: none;
+		@include media("<phone-land") {
+			display: block;
+			flex-grow: 0;
+		}
+	}
+	&__menu {
+		flex-grow: 2;
+		@include media("<phone-land") {
+			position: absolute;
+			background-color: $color__bright;
+			width: 270px;
+			height: 100vh;
+			top: 0;
+			left: -300px;
+			padding-top: 30px;
+			padding-left: 15px;
+			transition: all 0.3s;
+		}
+		&.s-open {
+			left: 0;
+		}
+		> ul {
+			display: flex;
+			justify-content: flex-end;
+			column-gap: 40px;
+			@include media("<phone-land") {
+				flex-direction: column;
+				row-gap: 20px;
+			}
+		}
+		.menu-item {
+			> a {
+				font-weight: 400;
+				font-size: 16px;
+			}
+			&.current-menu-item {
+				> a {
+					font-weight: 600;
+					color: $color__text;
+				}
+			}
+		}
+	}
+}

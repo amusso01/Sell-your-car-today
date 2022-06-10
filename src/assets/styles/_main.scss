@@ -1,0 +1,26 @@
+//Custom styles start here
+
+// Common
+@import "common/reset";
+@import "common/variables";
+// Import sassflexbox http://sassflexboxgrid.com/views/documentation.html
+@import "common/wp-core";
+@import "common/mixin";
+@import "common/general";
+@import "common/helper";
+
+// Components
+@import "components/hamburger";
+@import "components/search-form";
+@import "components/buttons";
+@import "components/header";
+@import "components/footer";
+@import "components/how-easy";
+@import "components/slider";
+@import "components/pre-footer";
+@import "components/accordion";
+@import "components/contact-number";
+
+// Templates
+@import "templates/page";
+@import "templates/home";

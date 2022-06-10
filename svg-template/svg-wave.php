@@ -1,0 +1,1 @@
+<svg width="1920" height="21" viewBox="0 0 1920 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="curve"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 21h1920v-1S1460 0 960 0 0 20 0 20v1z" fill="#BCB269"/></svg>

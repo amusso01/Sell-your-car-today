@@ -1,0 +1,85 @@
+footer.site-footer {
+	background-color: $color__footerBg;
+	padding: 50px 0;
+
+	.site-footer__inner {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		align-items: center;
+		row-gap: 60px;
+	}
+	.site-footer__item {
+		grid-column: span 4;
+		@include media("<phone-land") {
+			grid-column: span 6;
+		}
+		@include media("<phone") {
+			grid-column: span 12;
+		}
+	}
+	.site-footer__right {
+		justify-self: end;
+		color: $color__bright;
+		@include media("<phone") {
+			justify-self: start;
+			margin-top: 10px;
+		}
+		p {
+			margin-bottom: 3px;
+		}
+		p,
+		span {
+			color: $color__bright;
+		}
+	}
+	.site-footer__center {
+		justify-self: center;
+		figure {
+			position: relative;
+			height: 100px;
+			width: 90px;
+			> img {
+				@extend %cover;
+
+				object-fit: contain;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+		}
+		@include media("<phone-land") {
+			display: none;
+		}
+	}
+	.site-footer__disclaimer {
+		grid-column: 1/-1;
+		p {
+			text-align: center;
+			color: $color__bright;
+			&:first-of-type {
+				margin-bottom: 35px;
+			}
+		}
+	}
+	#menu_footer {
+		display: flex;
+		row-gap: 10px;
+		flex-wrap: wrap;
+		@include media("<phone") {
+			flex-direction: column;
+		}
+		li {
+			border-right: 1px solid hsla(0, 0%, 100%, 0.3);
+			padding-right: 10px;
+			padding-left: 10px;
+			&:last-of-type {
+				border-right: none;
+			}
+			@include media("<phone") {
+				border-right: none;
+			}
+			> a {
+				color: $color__bright;
+			}
+		}
+	}
+}
