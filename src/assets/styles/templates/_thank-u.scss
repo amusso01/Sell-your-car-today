@@ -1,0 +1,55 @@
+.thank-you-main {
+  padding: 40px 0 60px;
+
+  .additional-submitted{
+    max-width: 60%;
+    margin:auto;
+    @include media('<phone-land'){
+      max-width: 100%;
+    }
+    h1{
+      font-size: 1.875rem;
+      line-height: 1.133;
+    }
+    p{
+      color: #555;
+      padding: 1.25rem 0;
+    }
+    ul{
+      padding-left: 20px;
+      li{
+        color: #555;
+        display: list-item;
+        line-height: 26px;
+        list-style-position: outside;
+      }
+    }
+    h4{
+      color: #555;
+      padding-bottom: 1.25rem;
+    }
+
+    .primary{
+      padding-right: 3.25em;
+      padding-left: 3.25em;
+      background: #00b5da;
+      color: #fff;
+      border-radius: 0.75rem;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 600;
+      outline: none;
+      opacity: 1;
+      padding: 1.25rem 1.5625rem;
+      text-align: center;
+      text-decoration: none;
+      transition: .4s;
+      &:hover{
+        background-color: #45818d;
+      }
+    }
+  }
+}

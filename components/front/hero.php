@@ -12,9 +12,14 @@ Sell Your Car Today
 </h1> <h3 class="hero-text">
 Congratulations! You’ve just found the best place to sell your car today.
 See how much we'll pay for your car.
-</h3> <form class="np-form container hero-button-container"><input type="text" maxlength="8" placeholder="ENTER REG" class="form-reg"> <button aria-label="Enter your reg above then click this to start your valuation" class="primary hero-button">
+</h3> 
+<form class="np-form container hero-button-container">
+  <input type="text" maxlength="8" placeholder="ENTER REG" class="form-reg"> 
+  <button aria-label="Enter your reg above then click this to start your valuation" class="primary hero-button">
     Value my car
-</button></form> <!----> <p class="hero-subtext">
+  </button>
+</form> 
+<p class="hero-subtext">
 It gets better – accept our valuation within 48 hours and we’ll pay even
 
 <strong>more</strong>

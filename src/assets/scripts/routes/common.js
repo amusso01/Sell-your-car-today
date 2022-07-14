@@ -58,5 +58,38 @@ export default {
 				element.firstElementChild.classList.toggle("s-active");
 			});
 		});
+
+
+		// TAB APPOINTMENT 
+
+
+		const fdry =  document.getElementById('fdryAction');
+		if (typeof(fdry) != 'undefined' && fdry != null)
+		{
+			const tab = document.querySelectorAll('.single-action')
+			const btn = document.querySelectorAll('.cta-summary .outline')
+
+			btn.forEach(el => {
+				el.addEventListener('click', openTab)
+			});
+
+			function openTab(e){
+				let target = e.target.dataset.cta;
+				btn.forEach(a=>{a.classList.remove('primary')})
+				e.target.classList.add('primary')
+
+
+				tab.forEach(element => {
+					element.classList.remove('active')
+					if(element.dataset.sell === target){
+						element.classList.add('active')
+					}
+				});
+			}
+
+		}
+
+
+
 	}
 };

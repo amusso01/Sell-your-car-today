@@ -9,6 +9,15 @@
 		max-width: 1880px;
 		margin: auto;
 	}
+
+	&--small{
+		padding: 0 30px;
+		@include media(">phone") {
+			padding: 0 85px;
+			max-width: 1300px;
+			margin: auto;
+		}
+	}
 }
 
 .noscroll {
