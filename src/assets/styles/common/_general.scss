@@ -8,6 +8,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	font-size: $text__p;
 	font-weight: 400;
+	scroll-behavior: smooth;
 }
 
 /**
@@ -92,7 +93,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: $text__h1;
+	font-size: $text__h2;
 }
 
 h3,
@@ -113,4 +114,10 @@ h5,
 h6,
 .h6 {
 	font-size: $text__h6;
+}
+
+.wp-block-image{
+	img{
+		object-fit: cover;
+	}
 }

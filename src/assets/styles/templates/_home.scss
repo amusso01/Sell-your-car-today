@@ -135,7 +135,7 @@
 		url(https://wordpress-784170-2683458.cloudwaysapps.com/wp-content/themes/fdry-theme/dist/images/car-hero.png);
 	background-position: 100%;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover!important;
 	height: 70%;
 	position: absolute;
 	right: 0rem;
@@ -157,7 +157,7 @@
 
 // WHY SELL
 .fdry-why-sell__front {
-	margin: 70px 0;
+	margin: 70px auto;
 	padding-top: 50px;
 	padding-bottom: 0px;
 	border-top: 1px solid #ccc;
@@ -238,7 +238,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 80px 0 150px;
+	margin: 80px 0 50px;
 	@include media("<phone") {
 		flex-direction: column;
 		align-items: flex-start;
@@ -246,5 +246,45 @@
 	}
 	.btn {
 		min-height: 55px;
+	}
+}
+
+.trustpilot-review-grid{
+	display: grid;
+	grid-template-columns: 0.2fr 0.8fr;
+
+	@include media("<phone") {
+		grid-template-columns: 1fr;
+	}
+
+	.svg-logo{
+		padding: 30px;
+	}
+}
+
+
+.home-image{
+	margin-bottom: 60px;
+
+	>ul{
+
+		display: flex;
+		justify-content: space-evenly;
+		list-style: none;
+		flex-wrap: wrap;
+		 li{
+			margin: 0 10px 30px;
+
+		
+			width:300px;
+			position: relative;
+			height: 250px;
+
+			>img{
+				@extend %cover;
+				object-fit: cover;
+			}
+		 }
+
 	}
 }

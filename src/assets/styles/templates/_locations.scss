@@ -1,0 +1,153 @@
+.location-main{
+  margin: 90px 0;
+}
+
+.location-container{
+  h1{
+    margin-bottom: 70px;
+    font-size: 36px;
+  }
+}
+
+.locations-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 60px;
+  column-gap: 40px;
+  margin-bottom: 90px;
+
+  @include media("<phone-land") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media("<phone") {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .card-location{
+    .figure{
+      width: 100%;
+      height: 150px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 13px;
+      margin-bottom: 12px;
+
+      >img{
+        @extend %cover;
+
+        object-fit: cover;
+      }
+    }
+
+    h3{
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    .pcode{
+      color: #000;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .open-hours{
+      margin-bottom: 8px;
+
+      p{
+        font-size: 14px;
+      }
+    }
+
+    .btn{
+      background-color: $color__main;
+      height: auto;
+      width: 100%;
+      color: $color__bright;
+      font-size: 14px;
+      min-height: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+.fade {
+  transition: opacity .15s linear;
+}
+
+#mapsModal{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background-color: rgba(#000, 0.5);
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+
+
+  &.s-open{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-dialog{
+    max-width:700px;
+    transform: none;
+    position: relative;
+    margin: 80px auto;
+  }
+
+  .modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .modal-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid $color__link;
+    background-color: #FAFAFA;
+
+    h4{
+      font-size: 21px;
+    }
+
+    .close{
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    padding: 15px;
+    margin: -15px -15px -15px auto;
+    cursor: pointer;
+    }
+  }
+}
+
+.location-hero{
+  .hero-bg{
+    min-height:430px;
+    background-size: cover;
+  }
+}

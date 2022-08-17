@@ -1,5 +1,6 @@
 import smoothscroll from "smoothscroll-polyfill";
 import hamburger from "./../part/hamburger";
+import gmap from "../part/gmap";
 
 export default {
 	init() {
@@ -89,6 +90,11 @@ export default {
 
 		}
 
+
+		const location = document.getElementById('jsLocation')
+		if (typeof(location) != 'undefined' && location != null){
+			gmap()
+		}
 
 
 	}

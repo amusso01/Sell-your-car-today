@@ -15,7 +15,7 @@
   <div class="fdry-container">
     <div class="contact-grid">
       <div class="header small-grid">
-        <h3>Send un an email</h3>
+        <h3>Send us an email</h3>
       </div>
       <div class="header big-grid">
         <h3>Give us a call</h3>
@@ -23,6 +23,7 @@
       
       <div class="fdry-email small-grid">
         <a href="mailto:hello@sellyourcartoday.com" class="button">hello@sellyourcartoday.com</a>
+        <img src="<?php echo get_template_directory_uri().'/dist/images/contact.jpg' ?>" style="display:block; max-width:100%; margin-top:25px;">
       </div>
       <div class="fdry-phones big-grid">
         <div class="fdry-phones__card">

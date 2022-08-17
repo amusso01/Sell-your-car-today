@@ -24,6 +24,15 @@ get_header();
 
 	<!-- TRUSTPILOT -->
 	<?php get_template_part( 'components/front/trustpilot' ); ?>
+
+	<section class="home-image">
+		<ul class="content-block">
+			<li><img src="<?php echo get_template_directory_uri().'/dist/images/home-image-1.jpg' ?>"></li>
+			<li><img src="<?php echo get_template_directory_uri().'/dist/images/home-image-2.jpg' ?>"></li>
+			<li><img src="<?php echo get_template_directory_uri().'/dist/images/home-image-3.jpg' ?>"></li>
+			<li><img src="<?php echo get_template_directory_uri().'/dist/images/home-image-4.jpg' ?>"></li>
+		</ul>
+	</section>
 </main>
 
 <?php get_footer(); ?>
