@@ -36,13 +36,13 @@ get_header();
 
 
 <section><div class="content">
-  <div class="collection"> 
+  <div class=""> 
     <div class="col-6 center drop-off-top content-block--small">
       <h3 class="title">
           Your appointment
       </h3> 
       <p>Our team can’t wait to buy your car, use our simple two-step appointment tool below.</p> 
-      <span out-in="">
+      <!-- <span out-in="">
         <div>
           <div class="vehicle wide">
             <aside class="vehicle-details">
@@ -77,7 +77,7 @@ get_header();
             </aside>
           </div>
         </div>
-      </span> 
+      </span>  -->
       <!-- <div class="collection-assist">
         <h3>Need Assistance?</h3> 
         <p>Do you wish to speak to us about this valuation? Perhaps you wish to know more about our service? </p> 
@@ -96,7 +96,7 @@ get_header();
    <div class="collection-form content-block--small">
     <div class="col-6 center np-form step-1 drop-off-bottom">
       <h3>Make your appointment</h3> 
-      <form action="<?php echo site_url('thank-you') ?>" onsubmit='disableButton()' method="POST">
+      <form action="<?php echo site_url('thank-you') ?>" onsubmit='return disableButton()' method="POST">
       <div class="form-items drop-off-dates">
         <div class="form-item">
           <div class="form-desc">
@@ -230,21 +230,6 @@ get_header();
             <option value="18:45:00">
                 18:45
             </option>
-            <option value="19:00:00">
-                19:00
-            </option>
-            <option value="19:15:00">
-                19:15
-            </option>
-            <option value="19:30:00">
-                19:30
-            </option>
-            <option value="19:45:00">
-                19:45
-            </option>
-            <option value="20:00:00">
-                20:00
-            </option>
           </select> 
           <label for="time">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-chevron-down"><path d="M17.0001 10L12.7072 14.2929C12.3167 14.6834 11.6835 14.6834 11.293 14.2929L7.00012 10" stroke="#A2A9AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -253,8 +238,50 @@ get_header();
         </div>
       </div> 
       <p>Choose your preferred drop-off location</p> 
+
+     
+
       <div class="form-items drop-off-loc">
-        <div class="drop-off-inner">
+
+        <div class="fdry-region" style="margin-bottom:20px">
+          <h3>Wales</h3>
+        </div>
+        
+        <div class="drop-off-inner" style="margin-bottom:35px">
+          <div class="form-item wide">
+            <input id="address4" type="radio" name="address"  value="cded943c-f4fc-4ed3-8d0b-e73adde5b790" >
+            <label for="address4" class="address">
+              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+              <ul>
+                <h4>Sell Your Car Today Neath</h4> 
+                <li>Neath Abbey Business Park</li> 
+                <li>Neath Abbey</li> 
+                <li>Neath</li> 
+                <li>SA10 7DR</li> 
+                <li>01792 940847</li>
+              </ul>
+            </label>
+          </div> 
+          <div class="form-item wide">
+            <input id="address7" type="radio" name="address" value="607fb477-6e5f-4433-9c2f-5d9fd2dd58fc" > 
+            <label for="address7" class="address">
+              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> 
+              <ul>
+                <h4>Sell Your Car Today Cardiff North</h4> 
+                <li>Abercynon Road</li> <li>Cilfynydd</li> 
+                <li>Abercynon</li> 
+                <li>CF46 6ST</li> 
+                <li>01443 807821</li>
+              </ul>
+            </label>
+          </div>
+        </div>
+
+        <div class="fdry-region" style="margin-bottom:20px">
+          <h3>Midlands</h3>
+        </div>
+
+        <div class="drop-off-inner" style="margin-bottom:35px">
           <div class="form-item wide">
             <input id="address1" type="radio" name="address"  value="6d1ab16a-8545-412d-97f7-e0a50e13a993"  checked="checked"> 
             <label for="address1" class="address">
@@ -282,33 +309,6 @@ get_header();
             </label>
           </div> 
           <div class="form-item wide">
-            <input id="address3" type="radio" name="address" value="a03835b5-bb34-4d15-865d-b56c7543ad68"> 
-            <label for="address3" class="address">
-              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> 
-              <ul><h4>Sell Your Car Today Rochdale</h4> 
-                <li>Sandbrook Way</li> 
-                <li>Town Centre</li> 
-                <li>Rochdale </li> 
-                <li>OL11 1RY</li> 
-                <li>01706 335272</li>
-              </ul>
-            </label>
-          </div> 
-          <div class="form-item wide">
-            <input id="address4" type="radio" name="address"  value="cded943c-f4fc-4ed3-8d0b-e73adde5b790" >
-            <label for="address4" class="address">
-              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-               <ul>
-                <h4>Sell Your Car Today Neath</h4> 
-                <li>Neath Abbey Business Park</li> 
-                <li>Neath Abbey</li> 
-                <li>Neath</li> 
-                <li>SA10 7DR</li> 
-                <li>01792 940847</li>
-              </ul>
-            </label>
-          </div> 
-          <div class="form-item wide">
             <input id="address5" type="radio" name="address" value="a8dbf70e-03ee-4aed-a4d5-8aada61aa7db" > 
             <label for="address5" class="address">
               <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> 
@@ -322,6 +322,33 @@ get_header();
               </ul>
             </label>
           </div> 
+        </div>
+
+        <div class="fdry-region" style="margin-bottom:20px">
+          <h3>North</h3>
+        </div>
+
+        <div class="drop-off-inner" style="margin-bottom:35px">
+          <div class="form-item wide">
+            <input id="address3" type="radio" name="address" value="a03835b5-bb34-4d15-865d-b56c7543ad68"> 
+            <label for="address3" class="address">
+              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> 
+              <ul><h4>Sell Your Car Today Rochdale</h4> 
+                <li>Sandbrook Way</li> 
+                <li>Town Centre</li> 
+                <li>Rochdale </li> 
+                <li>OL11 1RY</li> 
+                <li>01706 335272</li>
+              </ul>
+            </label>
+          </div> 
+        </div>
+
+        <div class="fdry-region" style="margin-bottom:20px">
+          <h3>Yorkshire</h3>
+        </div>
+
+        <div class="drop-off-inner" style="margin-bottom:35px">
           <div class="form-item wide">
             <input id="address6" type="radio" name="address" value="58926689-a2fd-4933-97ce-67932bc7a495" > 
             <label for="address6" class="address">
@@ -335,20 +362,8 @@ get_header();
                 <li>01709 212397</li>
               </ul></label>
           </div> 
-          <div class="form-item wide">
-            <input id="address7" type="radio" name="address" value="607fb477-6e5f-4433-9c2f-5d9fd2dd58fc" > 
-            <label for="address7" class="address">
-              <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-tick"><path d="M7.58887 12.1806L10.4677 15.0594L16.3999 9.12714" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> 
-              <ul>
-                <h4>Sell Your Car Today Cardiff North</h4> 
-                <li>Abercynon Road</li> <li>Cilfynydd</li> 
-                <li>Abercynon</li> 
-                <li>CF46 6ST</li> 
-                <li>01443 807821</li>
-              </ul>
-            </label>
-          </div>
         </div> 
+
         <div class="cta-collection"><p>
             I confirm that the information I have given before submitting them are accurate to the best of my knowledge. I also confirm an understanding that the date and time requested above are available on a first-come-first-served basis.
         </p> 
@@ -356,12 +371,24 @@ get_header();
           Confirm Appointment
         </button>
       </div> 
+      <div style="width: 100%; overflow: hidden; height: 575px; margin-top:20px; margin-left: auto; margin-right:auto;">
+        <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1SUWRjuQ00X99Um8gZ2u14tDqroDnI8s&ehbc=2E312F"
+          width="100%"
+          height="600"
+          frameborder="0"
+          style="border:0; margin-top: -59px;">
+        </iframe>
+      </div>
+
       <div class="why-do-we">
         <h4>Why do we ask for this information?</h4> 
         <p>We gather this information to aid us in the valuation of your vehicle, to ensure we are able to contact you and to gain an understanding of the location of the vehicle that will be collected.</p> 
         <p>When you obtain a valuation, you agree to the terms and conditions, privacy and cookies policy, and our data and communication policy, which includes marketing communications regarding your vehicle. You can update your communication preferences at any time by visiting your contact preferences.</p>
       </div>
     </form>
+
+  
 
     </div>
   </div>
@@ -380,6 +407,21 @@ get_header();
 
 
 function disableButton() {
+
+
+  
+ var select = document.getElementById('time');
+var value = select.options[select.selectedIndex].value;
+
+
+      if (value == "") {
+       // e.preventDefault();
+
+        alert('Please enter a time for your appointment');
+        return false;
+      }
+    
+
         var btn = document.getElementById('next');
         btn.disabled = true;
         btn.innerText = 'Thank you...'
@@ -401,12 +443,36 @@ function setTime() {
 
             let y = new Date(dates[0], dates[1] - 1, dates[2], time[0], time[1])
             const g = new Date();
+
+            if (y.getDay() == 0 || y.getDay() == 6)
+            {
+
             if (g > y) {
               document.getElementById('time').children[i].setAttribute('disabled', 'disabled');
             } else {
               document.getElementById('time').children[i].removeAttribute('disabled');
+            }
+              if (time[0] > 17)
+              {
+                document.getElementById('time').children[i].setAttribute('disabled', 'disabled');
+              }
+
+            }else{
+              if (g > y) {
+              document.getElementById('time').children[i].setAttribute('disabled', 'disabled');
+            } else {
+              document.getElementById('time').children[i].removeAttribute('disabled');
+            }
+            if (time[0] < 10)
+              {
+                document.getElementById('time').children[i].setAttribute('disabled', 'disabled');
+              }
 
             }
+
+           
+          
+
         }
     }
 }
