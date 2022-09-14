@@ -45,6 +45,8 @@
 		</div>
 	</footer><!-- #colophon -->
 
+	<?php get_template_part( 'components/footer/sticky-mobile' ) ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

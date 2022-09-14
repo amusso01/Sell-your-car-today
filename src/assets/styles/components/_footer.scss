@@ -83,3 +83,50 @@ footer.site-footer {
 		}
 	}
 }
+
+
+// STICKY FOOTER
+.fdry-sticky-footer{
+	@include media(">phone") {
+		display:none;
+	}
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: $color__bright;
+	padding: 13px 8px ;
+	z-index: 10;
+	box-shadow: 0px -3px 24px 1px rgba(0,0,0,0.22);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.np-form .form-reg {
+    background: #f8ce4f;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 1.175rem;
+    font-weight: 900;
+    letter-spacing: 0.175rem;
+    line-height: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 49%;
+    padding: 5px 6px;
+		border: 2px solid rgb(164, 164, 164);
+
+	}
+	.hero-button{
+		font-size: 1.175rem;
+		line-height: 2.25rem;
+    width: 49%;
+    background: #00b5da;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 700;
+		padding: 5px 6px;
+		border: 2px solid rgb(31, 85, 178);
+	}
+}
