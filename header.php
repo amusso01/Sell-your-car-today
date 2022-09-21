@@ -47,6 +47,13 @@
 
 <!-- End TrustBox script -->
 
+
+<!-- Hubspot  -->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+
+
+<!-- HOTJAR -->
+
 <script>
 
     (function(h,o,t,j,a,r){

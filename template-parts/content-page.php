@@ -57,8 +57,24 @@
 	<!-- FORM -->
 	<div class="content-block form-general" style="margin-bottom:190px; max-width:800px; margin:0 auto 190px;">
 		<h3 style="margin-bottom:40px;">Say hello!</h3>
-		<p>If you’d like to discuss your car’s valuation or ask us about our vehicle valuation process, please feel free to get in touch with our team using the form below. Alternatively, visit our Contact page for more options.</p>
-		<?php get_template_part( 'components/form/general-form' ) ?>
+		<p style="margin-bottom:20px;">If you’d like to discuss your car’s valuation or ask us about our vehicle valuation process, please feel free to get in touch with our team using the form below. Alternatively, visit our Contact page for more options.</p>
+		<!-- <?php get_template_part( 'components/form/general-form' ) ?> -->
+
+		<script>
+
+			hbspt.forms.create({
+
+				region: "na1",
+
+				portalId: "6645024",
+
+				formId: "8541adea-8b03-4151-a623-5219ca962e1e",
+
+				version: "V2_PRERELEASE"
+
+			});
+
+		</script>
 	</div>
 
 <?php elseif(is_page( 'help' ) || is_page( '18' ))  : ?>
@@ -79,8 +95,24 @@
 		<!-- FORM -->
 		<div class="content-block form-general" style="margin-bottom:190px; max-width:800px; margin:0 auto 190px; padding-top:25px; padding-bottom:35px; border-radius:10px;  box-shadow: 2px 4px 6px 1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);">
 		<h3 style="margin-bottom:40px;">Send an enquiry</h3>
-		<p>If you’d like to discuss your car’s valuation or ask us about our vehicle valuation process, please feel free to get in touch with our team using the form below. Alternatively, visit our Contact page for more options.</p>
-		<?php get_template_part( 'components/form/general-form' ) ?>
+		<p style="margin-bottom:30px;">If you’d like to discuss your car’s valuation or ask us about our vehicle valuation process, please feel free to get in touch with our team using the form below. Alternatively, visit our Contact page for more options.</p>
+		<!-- <?php get_template_part( 'components/form/general-form' ) ?> -->
+
+		<script>
+
+			hbspt.forms.create({
+
+				region: "na1",
+
+				portalId: "6645024",
+
+				formId: "8541adea-8b03-4151-a623-5219ca962e1e",
+
+				version: "V2_PRERELEASE"
+
+			});
+
+		</script>
 	</div>
 
 
