@@ -7,7 +7,19 @@
 get_header();
 ?>
 
-<main role="main" class="site-main t&c  ">
+<style>
+    .tandc a{
+        color: #00B5DA;
+    }
+    .tandc a:hover{
+        text-decoration: underline;
+    }
+    .tandc ul{
+        list-style-position: inside;
+    }
+</style>
+
+<main role="main" class="site-main tandc  ">
     <article id="post-<?php the_ID(); ?>" <?php post_class('content-block'); ?>>
 
         <section style="max-width:820px; margin-left:auto; margin-right:auto; margin-top:40px">

@@ -12,7 +12,7 @@
 ?>
 
 <section class="fdry-sticky-footer">
-  <form onsubmit="return validateVRM(event)" class="np-form " id="regLookup"  action="/valuation-step-2" method="get" >
+  <form onsubmit="return validateFDRY(event)" class="np-form " id="regLookup"  action="/valuation-step-2" method="get" >
     <input type="text" maxlength="8" placeholder="ENTER REG" id="regSticky" name="reg" class="form-reg"> 
 
 
@@ -28,7 +28,7 @@
 
 
     
-function validateVRM(e) {
+function validateFDRY(e) {
 
     
     var selection = document.getElementById("regSticky").value;
