@@ -53,5 +53,22 @@
         </p>
       </div>
     </div>
+      <div class="question-set">
+        <p class="question">
+        What documentation do I need to bring to my appointment?
+            <!-- <span class="icon-container active"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-minus"><path d="M1 5L9 5" stroke="#A2A9AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span> -->
+            <span class="icon-container "><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon icon-plus"><path d="M1 5L9 5" stroke="#A2A9AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5 9L5 1" stroke="#A2A9AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </p> 
+    
+        <ul class="answer">
+          <li>- V5C registration document</li> 
+          <li>- Photo ID and recent proof of address</li> 
+          <li>- MOT certificate (if applicable)</li> 
+          <li>- If you have outstanding finance on the car, please bring a current settlement letter from your lender</li> 
+          <li>- The car!</li>
+        </ul> 
+    
+      </div>
+    </div>
   </div>
 </section>

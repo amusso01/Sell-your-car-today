@@ -42,9 +42,7 @@
 
 
 <!-- TrustBox script -->
-
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-
 <!-- End TrustBox script -->
 
 
@@ -73,11 +71,102 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
 </script>
+
+<!-- 
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=DC-12632820"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-12632820');
+</script>
+<!-- End of global snippet: Please do not remove -->
 </head>
 
 <body <?php body_class(); ?>>
 <!--=== GMT body ===-->
 <?php WPSeed_gtm('body') ?>
+
+
+<!--
+Event snippet for Sell Your Car Today - All Pages Pixel on : Please do not remove.
+Place this snippet on pages with events that you’re tracking. 
+Creation date: 11/25/2022
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'send_to': 'DC-12632820/retar0/selly0+standard'
+  });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=12632820;type=retar0;cat=selly0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+
+
+<?php if(is_front_page()) : ?>
+	<!--
+Event snippet for Sell Your Car Today - Homepage Pixel on https://www.sellyourcartoday.com/: Please do not remove.
+Place this snippet on pages with events that you’re tracking. 
+Creation date: 11/25/2022
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'send_to': 'DC-12632820/conve0/selly0+standard'
+  });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=12632820;type=conve0;cat=selly0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+<?php endif; ?>
+
+
+<?php if(is_page('locations')) : ?>
+
+<!--
+Event snippet for Sell Your Car Today - Locations Pixel on https://www.sellyourcartoday.com/locations/: Please do not remove.
+Place this snippet on pages with events that you’re tracking. 
+Creation date: 11/25/2022
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'send_to': 'DC-12632820/conve0/selly00+standard'
+  });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=12632820;type=conve0;cat=selly00;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+
+<?php endif; ?>
+
+
+<?php if(is_page('about-you-step-3')) : ?>
+<!--
+Event snippet for Sell Your Car Today - Value My Car Conversion Pixel on : Please do not remove.
+Place this snippet on pages with events that you’re tracking. 
+Creation date: 11/25/2022
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'send_to': 'DC-12632820/conve0/selly000+standard'
+  });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=12632820;type=conve0;cat=selly000;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+<?php endif ?>
 
 
 <!-- Google Tag Manager (noscript) -->
